@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>carFinancing</class>
+ <widget class="QMainWindow" name="carFinancing">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1109</width>
+    <height>846</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Car Financing</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tbCarFinancing">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>1081</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tabCarPurchase">
+     <attribute name="title">
+      <string>Car Purchase</string>
+     </attribute>
+     <widget class="QLabel" name="lblName">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>20</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Name</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblAge">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>60</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Age</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtName">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>30</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtAge">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>70</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbSelection">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>110</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Sonata</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Corolla</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Civic</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Camry</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lblSelection">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>100</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Select Car Type</string>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="grpSelectModel">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>90</y>
+        <width>231</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Select Model</string>
+      </property>
+      <widget class="QRadioButton" name="rdBasic">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>20</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Basic</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="rdHybrid">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>20</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Hybrid</string>
+       </property>
+      </widget>
+      <widget class="QRadioButton" name="rdSport">
+       <property name="geometry">
+        <rect>
+         <x>160</x>
+         <y>20</y>
+         <width>121</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Sport</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QLabel" name="lblDownPayment">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>140</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Down Payment</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtDownPayment">
+      <property name="geometry">
+       <rect>
+        <x>270</x>
+        <y>150</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QListWidget" name="lstPayments">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>240</y>
+        <width>701</width>
+        <height>491</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPurchase">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>200</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Purchase</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnClear">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>240</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Clear</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExit">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>240</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPayments">
+      <property name="geometry">
+       <rect>
+        <x>200</x>
+        <y>200</y>
+        <width>111</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show Payments</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblMonthlyPayments">
+      <property name="geometry">
+       <rect>
+        <x>650</x>
+        <y>190</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Monthly Payments</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabPurchasesMade">
+     <attribute name="title">
+      <string>Purchases Made</string>
+     </attribute>
+     <widget class="QListWidget" name="lstPurchasesMade">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>70</y>
+        <width>1071</width>
+        <height>331</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblPurchasesMade">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>20</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Purchases Made</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1109</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

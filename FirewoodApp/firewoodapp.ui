@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>firewoodApp</class>
+ <widget class="QMainWindow" name="firewoodApp">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1118</width>
+    <height>851</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Times New Roman</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Firewood App</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tbFirewoodApp">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1101</width>
+      <height>791</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tabDashboard">
+     <attribute name="title">
+      <string>Dashboard</string>
+     </attribute>
+     <widget class="QPushButton" name="btnPurchase">
+      <property name="geometry">
+       <rect>
+        <x>230</x>
+        <y>250</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Purchase</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSearch">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>250</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Search</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDisplay">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>250</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Display</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnExit">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>440</y>
+        <width>121</width>
+        <height>51</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabPurchase">
+     <attribute name="title">
+      <string>Purchase</string>
+     </attribute>
+     <widget class="QLabel" name="lblTransactionId">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>140</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Transaction ID</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCustomerName">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>200</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Customer Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtTransactionId">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>150</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtCustomerName">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>210</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cmbType">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>270</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblType">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>260</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Firewood Type</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblQuantity">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>320</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Quantity</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtQuantity">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>330</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnTotal">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>410</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Display Total</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblTotal">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>460</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Total</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtTotal">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>470</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnPurchase_2">
+      <property name="geometry">
+       <rect>
+        <x>450</x>
+        <y>540</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Purchase</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabSearch">
+     <attribute name="title">
+      <string>Search</string>
+     </attribute>
+     <widget class="QComboBox" name="cmbFirewoodType">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>50</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblFirewoodType">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>40</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Firewood Type</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnAverage">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>110</y>
+        <width>201</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Calculate Average Price</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblAverage">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>160</y>
+        <width>201</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Average Price</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtAverage">
+      <property name="geometry">
+       <rect>
+        <x>590</x>
+        <y>170</y>
+        <width>171</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDisplayData">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>230</y>
+        <width>201</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Display Data</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="firewoodTableWidget">
+      <property name="geometry">
+       <rect>
+        <x>290</x>
+        <y>300</y>
+        <width>471</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnDashboard">
+      <property name="geometry">
+       <rect>
+        <x>410</x>
+        <y>690</y>
+        <width>201</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Dashboard</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabDisplay">
+     <attribute name="title">
+      <string>Display</string>
+     </attribute>
+     <widget class="QTableWidget" name="displayTableWidget">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>100</y>
+        <width>1091</width>
+        <height>571</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Times New Roman</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1118</width>
+     <height>28</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

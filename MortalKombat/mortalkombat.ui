@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mortalKombat</class>
+ <widget class="QMainWindow" name="mortalKombat">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1122</width>
+    <height>855</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Segoe UI</family>
+    <pointsize>9</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Mortal Kombat</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tbPlayerCreation">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>1071</width>
+      <height>771</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="tabCreatePlayer">
+     <attribute name="title">
+      <string>Create Player</string>
+     </attribute>
+     <widget class="QLabel" name="lblName">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>110</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Player Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtName">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>120</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblSpeed">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>180</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Player Speed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSpeed">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>190</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblPower">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>250</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Player Power</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtPower">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>260</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblAgility">
+      <property name="geometry">
+       <rect>
+        <x>170</x>
+        <y>310</y>
+        <width>131</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Enter Player Agility</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtAgility">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>320</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnCreatePlayer">
+      <property name="geometry">
+       <rect>
+        <x>320</x>
+        <y>400</y>
+        <width>121</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Create Player</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tabModifyStats">
+     <attribute name="title">
+      <string>Modify Stats</string>
+     </attribute>
+     <widget class="QListWidget" name="lstCreatedPlayers">
+      <property name="geometry">
+       <rect>
+        <x>380</x>
+        <y>60</y>
+        <width>256</width>
+        <height>192</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblCreatedPlayers">
+      <property name="geometry">
+       <rect>
+        <x>454</x>
+        <y>20</y>
+        <width>131</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Players Created</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblModifyName">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>370</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Player Name</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtPlayerName">
+      <property name="geometry">
+       <rect>
+        <x>140</x>
+        <y>430</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblModifySpeed">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>370</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Player Speed</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtModifySpeed">
+      <property name="geometry">
+       <rect>
+        <x>330</x>
+        <y>430</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblModifyPower">
+      <property name="geometry">
+       <rect>
+        <x>540</x>
+        <y>370</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Player Power</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtModifyPower">
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>430</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lblModifyAgility">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>370</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Player Agility</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtModifyAgility">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>430</y>
+        <width>113</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <property name="readOnly">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnModifyStats">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>550</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Modify Stats</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1122</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

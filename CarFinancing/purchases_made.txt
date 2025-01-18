@@ -1,0 +1,5 @@
+Kishan,  19,  Camry,  Hybrid,  600
+Kishan,  19,  Camry,  Hybrid,  500
+Kishan,  19,  Civic,  Hybrid,  500
+Kishan,  19,  Corolla,  Sport,  600
+Kishan,  19,  Civic,  Hybrid,  400

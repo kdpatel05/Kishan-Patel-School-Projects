@@ -1,0 +1,4 @@
+Oak,180
+Maple,150
+Birch,100
+Apple,210

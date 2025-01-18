@@ -1,0 +1,4 @@
+Sonata,26000
+Corolla,27000
+Civic,25000
+Camry,28000
