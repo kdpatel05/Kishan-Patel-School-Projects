@@ -1,1 +1,2 @@
-This project repository contains all the in class PyQt applications.
+This project repository contains various projects and applications using Python, SQL, HTML, and Django.
+
