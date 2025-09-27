@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="us-EN">
+	<head>
+		<title>Project 2</title>
+		<!--Metadata for the HTML file, including the character set and the Page Title -->
+		<meta charset="utf-8"/>
+		
+		<!--Link to the Bootstrap CDN -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+		
+		<!--Link to the Font Awesome CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		
+		<!--Link to the JQuery CDN -->
+		<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		
+	</head>
+	
+	<body>
+		<!-- First Bootstrap container block and row showing the picture and Name for the resume -->
+		<div class="container-fluid mt-5 ms-5" id="nameblock">
+			<div class="row">
+				<!-- First column of the first container block is size 2 and contains the Picture for the resume -->
+				<div class="col-sm-2">
+					<div class="card ms-5">
+						<img class="card-img-top" src="https://media.licdn.com/dms/image/v2/D5603AQHQ_ZmesGI9fg/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1728848772579?e=1744848000&v=beta&t=zjC7iSDijsb683K72PYfcQFVqfiqWBxYBOpjgtzzVqE"/>
+					</div>
+				</div>
+				
+				<!-- Second column of the first container block is size 10 and contains the Name and Title for the resume -->
+				<div class="col-sm-10 text-center"><br></br>
+					<h3>Kishan Patel</h3>
+					<h5>Business Administration Student</h5>
+				</div>
+				<span class="border-bottom border-secondary mt-3"></span>
+			</div>
+		</div>
+		
+		<!-- Second Bootstrap container block and row showing the Contact and Education for the resume -->
+		<div class="container-fluid mt-3" id="contactblock">
+			<div class="row">
+				<!-- First column of the second container block is size 3 and contains centered Contact information for the resume -->
+				<div class="col-sm-3 text-center">
+					<!-- Contact information includes Font Awesome images for each contact type -->
+					<h3>Contact</h3>
+					<h6><i class="fa-solid fa-house"></i>&nbsp3733 Single Leaf Circle</h6>
+					<h6>&nbsp&nbsp&nbsp&nbsp&nbspHigh Point, NC 27265</h6>
+					<h6><i class="fa-solid fa-phone"></i>&nbsp336-624-0291</h6>
+					<h6><i class="fa-solid fa-envelope"></i>&nbspkdpatel3@ncsu.edu</h6>
+					<!-- Includes ability to open Linked In page in a new window -->
+					<h6><i class="fa-brands fa-linkedin"></i>&nbsp<a target="_blank" href="https://www.linkedin.com/in/kishand-patel/">linkedin.com/in/kishand-patel</a></h6>
+				</div>
+				
+				<!-- Second column of the first container block is size 9 and contains the Education information for the resume -->
+				<div class="col-sm-9">
+					<h3>Education</h3>
+					<h6>North Carolina State University, Raleigh, NC</h6>
+					<p>B.S. in Business Administration with an Information Technology Concentration, December 2025</p>
+					<p></p>
+					<h6>Guildford Technical Community College, Jamestown, NC</h6>
+					<p>Associate of Science, May 2023</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Third Bootstrap container block and row showing the Interests and Skills for the resume -->
+		<div class="container-fluid mt-3" id="interestsblock">
+			<div class="row">
+				<!-- First column of the third container block is size 3 and contains centered Interests for the resume -->
+				<div class="col-sm-3 text-center">
+					<h3>Interests</h3>
+					<h6>Movie Buff</h6>
+					<h6>Fitness and Exercise</h6>
+					<h6>Tennis and Swimming</h6>
+				</div>
+				
+				<!-- Second column of the first container block is size 9 and contains the Skills section for the resume with progress bars -->
+				<div class="col-sm-9">
+					<h3>Skills</h3>
+					<h6>Python and HTML Programming Languages</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped" style="width:70%"></div>
+					</div>
+					<h6>Tableau and Data Visualization</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-danger" style="width:85%"></div>
+					</div>
+					<h6>SQL and Database Management</h6>
+					<div class="progress">
+						<div class="progress-bar progress-bar-striped bg-success" style="width:40%"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Fourth Bootstrap container block and row showing the Extra Curricular Activities for the resume -->
+		<div class="container-fluid mt-3" id="extrablock">
+			<div class="row">
+				<!-- First column of the fourth container block is size 3 and is blank -->
+				<div class="col-sm-3">
+				</div>
+				
+				<!-- Second column of the fourth container block is size 9 and contains the Extra Curricular Activities as a bulleted list for the resume -->
+				<div class="col-sm-9">
+					<h3>Extra Curricular Activities</h3>
+					<ul>	
+						<li><b>Krispy Kreme Challenge charity event</b></li>
+						<li><b>Volunteer activities</b></li>
+						<li><b>Part time job at the bookstore</b></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Fifth Bootstrap container block and row showing the Contact Me section of the resume -->		
+		<div class="container-fluid mt-3 mb-5" id="containerblock">
+			<div class="row">
+				<!-- First column of the fifth container block is size 3 and is blank -->
+				<div class="col-sm-3">
+				</div>
+				
+				<!-- Second column of the fifth container block is size 9 and contains the Contact Me section for the resume -->
+				<div class="col-sm-9">
+					<form method="POST" action="#">
+						<h3>Contact me</h3>
+						<!-- The first input field of the form is for the Email -->
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="email" id="email" class="form-control" />
+						</div>
+						<!-- The second input field of the form is for the freeform Message -->
+						<div class="form-group">
+							<label for="msg">Message</label>
+							<input type="text" id="msg" class="form-control" />
+						</div>
+						<!-- Button to submit the contact request -->
+						<button id="btnsubmit" class="btn btn-primary mt-3" type="submit">Submit</button>
+					</form>	
+				</div>
+			</div>
+		</div>
+		
+		<!-- JQuery script to hide and show the Contact Me section of the resume -->
+		<script>
+		// (document).ready waits for all HTML elements to be rendered before execution of the jquery/javascript code.	
+			$(document).ready(function(){
+				
+				// JQuery code to hide the Contact Me section when clicking on the Contact Me container block. 
+				$("#containerblock").click(function(){
+					$("#containerblock").hide()
+				})
+				
+				// JQuery code to show the Contact Me section when clicking on the Picture/Name container block.
+				$("#nameblock").click(function(){
+					$("#containerblock").show()
+				})
+				
+				// JQuery code to show the Contact Me section when clicking on the Contact/Education container block.
+				$("#contactblock").click(function(){
+					$("#containerblock").show()
+				})
+				
+				// JQuery code to show the Contact Me section when clicking on the Interests/Skills container block.
+				$("#interestsblock").click(function(){
+					$("#containerblock").show()
+				})
+				
+				// JQuery code to show the Contact Me section when clicking on the Extra Curricular Activities container block.
+				$("#extrablock").click(function(){
+					$("#containerblock").show()
+				})
+			})
+		</script>
+		
+	</body>
+</html>
