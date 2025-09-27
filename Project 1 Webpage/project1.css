@@ -1,0 +1,135 @@
+/* Styling information for the first section to add a red background. */
+#firstdiv {
+	background-color: red;
+}
+
+/* Styling information for the first header 3 of the first section to right align the text. */
+#firsth3 {
+	text-align: right;
+}
+
+/* Styling information for the first header 1 of the first section to center align the text. */
+#firsth1 {
+	text-align: center;
+}
+
+/* Styling information for the second header 3 of the first section to remove the bottom margin. */
+#secondh3 {
+	margin-bottom: 0px;
+}
+
+/* Styling information for the second section to add a background image with white text and opacity. */
+#seconddiv {
+	background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f9/Phoenicopterus_ruber_in_S%C3%A3o_Paulo_Zoo.jpg");
+	height: 150px;
+	background-size: 100%;
+	opacity: 0.8;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Styling information for the third section to add margins. */
+#thirddiv {
+	margin-left: 50px;
+	margin-right: 50px;
+}
+
+/* Styling information for the third section to make the link text a red color when visited. */
+a:visited {
+	color: red;
+}
+
+/* Styling information for the third section to make the link text a red color before it is visited. */
+a:link {
+	color: red;
+}
+
+/* Styling information for the third section to make the bullets square for the unordered list. */
+#unorderedlist {
+	list-style-type: square;
+}
+
+/* Styling information for the third section to make the numbers capital Roman numerals for the ordered list. */
+#orderedlist {
+	list-style-type: upper-roman;
+}
+
+/* Styling information for the fourth section to add a blue background to the section header. */
+#fourthh2 {
+	background-color: #aad3e6;
+}
+
+/* Styling information for the fifth section to add a green background to the section header. */
+#fifthh2 {
+	background-color: #85eb81;
+}
+
+/* Styling information for the sixth section to add a yellow background to the section header. */
+#sixthh2 {
+	background-color: #f2f205;
+}
+
+/* Styling information for the seventh section to add a pink background to the section header. */
+#seventhh2 {
+	background-color: pink;
+}
+
+/* Styling information for the seventh section to center the YouTube video. */
+#seventhdiv {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Styling information for the seventh section to center the text under the YouTube video. */
+#videotext {
+	text-align: center;
+}
+
+/* Styling information for the eighth and ninth sections to add an orange background to the section header and center the text with spacing. */
+#eighthh2 {
+	background-color: orange;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Styling information for the eighth section to set the height and width of the first bird image and add a left margin. */
+#firstimage {
+	height: 300px;
+	width: 350px;
+	margin-left: 50px;
+}
+
+/* Styling information for the eighth section to set the height and width of the first bird image, right justify the image, add a left margin. */
+#secondimage {
+	height: 300px;
+	width: 350px;
+	float: right;
+	margin-right: 50px;
+}
+
+/* Class to capture styling information used in sections 4, 5, 6, and 7 to set the height of the header, left and right margins, and center the text. */
+.commonheight {
+	height: 100px;
+	margin-left: 50px;
+	margin-right: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* Class to capture the table styling for sections 4, 5, and 6 to center the table. */
+.commontable {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Class to capture the row styling for sections 5 and 6 to center and bold the table row text. */
+.commontablerow {
+	text-align: center;
+	font-weight: bold;
+}

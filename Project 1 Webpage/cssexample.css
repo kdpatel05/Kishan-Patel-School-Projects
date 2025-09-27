@@ -1,0 +1,29 @@
+h1 {
+	color: yellow;
+}
+
+h2 {
+	font-family: Arial;
+	color: pink;
+}
+
+p {
+	color: orange;
+}
+
+#section2h2 {
+	color: blue;
+}
+
+/* This is a comment */
+#seconddiv {
+	background-color: #137fd1;
+	text-align: center;
+	margin-left: 100px;
+	margin-right: 50px;
+	margin-top: 200 px;
+	margin-bottom: 200 px;
+	
+	/* Using the short hand margin property - top right bottom left*/
+	margin: 100px 200px 50px 150px
+}
