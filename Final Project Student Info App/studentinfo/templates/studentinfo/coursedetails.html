@@ -1,0 +1,52 @@
+{% extends 'studentinfo/base.html' %}
+
+{% block content %}
+		<!-- Bootstrap container block with a table that shows the courses offered. -->
+		<div class="container-fluid">
+			<h2>Course details</h2>
+			<!-- Define a table to list the courses in the Coursedetails table. -->
+			<table class="table table-bordered">
+				<thead class="table-dark">
+					<tr>
+						<th> Course Title </th>
+						<th> Course Name </th>
+						<th> Students Enrolled </th>
+						<th> Course Department </th>
+						<th> Instructor Full Name </th>
+					</tr>
+				</thead>
+				<tbody>
+					<!-- For loop to iterate through the coursedata Django query results from the coursedetails function. -->
+					{% for row in coursedata %}
+					<tr>
+						<td>{{ row.coursetitle }}</td>
+						<td>{{ row.coursename }}</td>
+						<td>{{ row.studentsenrolled }}</td>
+						<td>{{ row.coursedept }}</td>
+						<td>{{ row.instructorname }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+			
+			<!-- Use a paginator object from the Paginator class that displays ten courses at a time. -->
+			<div class="pagination">
+				<!-- Use navigation controls to direct the user through the pages. -->
+				<span class"step-links">
+					{% if coursedata.has_previous %}
+					<a href="?page=1">First</a>
+					<a href="?page={{ coursedata.previous_page_number }}">Previous</a>
+					{% endif %}
+					
+					Page {{ coursedata.number }} of {{ coursedata.paginator.num_pages }}
+					
+					{% if coursedata.has_next %}
+					<a href="?page={{ coursedata.next_page_number }}">Next</a>
+					<a href="?page={{ coursedata.paginator.num_pages }}">Last</a>
+					{% endif %}
+				</span>
+			</div>
+			
+		</div>	
+
+{% endblock %}
