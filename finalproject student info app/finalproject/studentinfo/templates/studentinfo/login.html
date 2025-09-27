@@ -1,0 +1,26 @@
+{% extends "studentinfo/base.html" %}
+
+{% block content %}
+
+<!-- Bootstrap container block asking the user to login with a user id and password. -->
+<div class="container mt-5">
+	<div class="card">
+		<div class="card-header">
+			<h4>Please log in</h4>
+		</div>
+		<div class="card-body">
+			<form class="form" method="post" action="{% url 'login' %}">
+				<!-- Confirm that unique CSRF Token is sent with the login request. -->
+				{% csrf_token %}
+				<table class="table">
+					{{ form }}
+				</table>
+				<!-- Display the submit button for user to submit login information. -->
+				<input type="submit" class="btn btn-primary" value="Submit" />
+			</form>
+		</div>
+	</div>
+</div>
+
+
+{% endblock %}
